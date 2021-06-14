@@ -1,28 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-class NewExample extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-    handleClick = () => {
-        document.querySelector('#my-image').src = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
-    }
-    render() {
-        return (
-            <div>
-                <img id="my-image" onClick={ this.handleClick } src="https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg" />
-            </div>
-        )
-    }
-}
+import Greeting from './Components/Greeting/index'
 
 ReactDOM.render(
     <React.StrictMode>
-        <NewExample />
+        <Greeting />
     </React.StrictMode>,
     document.getElementById('root')
 );
