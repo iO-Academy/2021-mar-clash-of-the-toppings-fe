@@ -1,23 +1,4 @@
-
-/*Assigning fonts as title or body*/
-@font-face {
-  font-family:titleFont;
-  src: url(fonts/upheavtt.ttf);
-}
-@font-face {
-  font-family:bodyFont;
-  src: url(fonts/Russo_One.ttf);
-}
-
-/*Heading background color & text styling*/
-heading {
-  font-family: titleFont;
-  font-size: 4rem;
-  background-color: #A81368;
-  color: #E7257B;
-}
-
-/*Constant background color*/
 body {
   background-color: #E7257B;
+  margin: 0;
 }
