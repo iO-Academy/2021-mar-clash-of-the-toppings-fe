@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Greeting from './Components/Greeting/index'
+import Greeting from './Components/Splash/Greeting/index'
+import WelcomeText from "./Components/Splash/WelcomeText";
 
 ReactDOM.render(
     <React.StrictMode>
         <Greeting />
+        <WelcomeText />
     </React.StrictMode>,
     document.getElementById('root')
 );
