@@ -3,12 +3,21 @@
     src: local('bodyFont'), url(../../../fonts/Russo_One.ttf) format('truetype');
 }
 
+#welcomeText {
+    width: 60%;
+    margin: 30px 20%;
+    background-color: #FBC369;
+    border-radius: 25px 0;
+    padding: 10px;
+    box-shadow: 12px 8px #A81368;
+}
+
 /*Heading background color & text styling*/
 h4 {
     font-family: bodyFont;
     font-size: 1.5em;
-    color: #A81368;
+    color: #E6332A;
     text-align: center;
-    width: 60%;
-    margin: 30px 20%;
+    width: 90%;
+    margin: 10px 5%;
 }
