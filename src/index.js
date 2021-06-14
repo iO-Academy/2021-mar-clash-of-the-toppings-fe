@@ -4,11 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Greeting from './Components/Splash/Greeting/index'
 import WelcomeText from "./Components/Splash/WelcomeText";
+import PlayButton from "./Components/Splash/PlayButton"
 
 ReactDOM.render(
     <React.StrictMode>
         <Greeting />
         <WelcomeText />
+        <PlayButton />
     </React.StrictMode>,
     document.getElementById('root')
 );
