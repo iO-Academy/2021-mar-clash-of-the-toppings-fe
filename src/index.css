@@ -2,11 +2,11 @@
 /*Assigning fonts as title or body*/
 @font-face {
   font-family:titleFont;
-  src: url(./public/upheavtt.ttf);
+  src: url(fonts/upheavtt.ttf);
 }
 @font-face {
   font-family:bodyFont;
-  src: url(./public/Russo_One.ttf);
+  src: url(fonts/Russo_One.ttf);
 }
 
 /*Heading background color & text styling*/

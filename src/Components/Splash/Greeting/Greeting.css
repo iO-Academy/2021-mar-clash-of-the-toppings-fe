@@ -1,5 +1,14 @@
-body {
-    background-color: white;
-    color: black;
+
+@font-face {
+    font-family:titleFont;
+    src: local('titleFont'), url(../../../fonts/upheavtt.ttf) format('truetype');
 }
 
+/*Heading background color & text styling*/
+h1 {
+    font-family: titleFont;
+    font-size: 4em;
+    background-color: #A81368;
+    color: #E7257B;
+    text-align: center;
+}
