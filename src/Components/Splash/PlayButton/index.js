@@ -1,19 +1,18 @@
 import React from "react";
 import './PlayButton.css';
+import { useHistory } from 'react-router-dom';
 
-class PlayButton extends React.Component {
-    handleClick = () => {
-        console.log(this)
-    }
-    render() {
-        return (
-            <div>
-                <button onClick={ this.handleClick }>
-                    PLAY GAME
-                </button>
-            </div>
-        )
-    }
-}
+const PlayButton = () => {
+    const history = useHistory();
+    const handleClick = () => history.push('/clash');
+
+    return (
+        <div>
+            <button onClick={ handleClick }>
+                PLAY GAME
+            </button>
+        </div>
+    );
+};
 
 export default PlayButton
