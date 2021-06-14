@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/*Assigning fonts as title or body*/
+@font-face {
+  font-family:titleFont;
+  src: url(./public/upheavtt.ttf);
+}
+@font-face {
+  font-family:bodyFont;
+  src: url(./public/Russo_One.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Heading background color & text styling*/
+heading {
+  font-family: titleFont;
+  font-size: 4rem;
+  background-color: #A81368;
+  color: #E7257B;
+}
+
+/*Constant background color*/
+body {
+  background-color: #E7257B;
 }
