@@ -5,6 +5,19 @@ import reportWebVitals from './reportWebVitals';
 import Greeting from './Components/Splash/Greeting/index'
 import WelcomeText from "./Components/Splash/WelcomeText";
 import PlayButton from "./Components/Splash/PlayButton"
+// import { Route, Link, BrowserRouter as Router} from react-router-dom
+//
+// class Routing extends React.Component {
+//     render() {
+//         return (
+//             <Router>
+//                 <Route path="/" component={App} />
+//                 <Route path="/clash" component={Clash} />
+//                 <Route path="/results" component={Results} />
+//             </Router>
+//         )
+//     }
+// }
 
 ReactDOM.render(
     <React.StrictMode>
