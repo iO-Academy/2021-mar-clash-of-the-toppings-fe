@@ -6,10 +6,13 @@ import PlayButton from "./PlayButton/index";
 class App extends React.Component {
     render() {
         return (
-            <Greeting />,
-            <WelcomeText />,
-            <PlayButton />
-        )
+            <div>
+                <Greeting />
+                <WelcomeText />
+                <PlayButton />
+            </div>
+
+    )
     }
 }
 

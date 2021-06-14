@@ -4,13 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import App from './Components/Splash'
+import Clash from './Components/Clash'
 
 class Routing extends React.Component {
     render() {
         return (
             <Router>
                 <Route path="/" component={App} />
-                {/*<Route path="/clash" component={Clash} />*/}
+                <Route path="/clash" component={Clash} />
                 {/*<Route path="/results" component={Results} />*/}
             </Router>
         )
