@@ -2,9 +2,6 @@ import React from "react";
 import './PlayButton.css';
 
 class PlayButton extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     handleClick = () => {
         console.log(this)
     }

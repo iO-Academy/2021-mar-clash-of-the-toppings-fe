@@ -2,28 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Greeting from './Components/Splash/Greeting/index'
-import WelcomeText from "./Components/Splash/WelcomeText";
-import PlayButton from "./Components/Splash/PlayButton"
-// import { Route, Link, BrowserRouter as Router} from react-router-dom
-//
-// class Routing extends React.Component {
-//     render() {
-//         return (
-//             <Router>
-//                 <Route path="/" component={App} />
-//                 <Route path="/clash" component={Clash} />
-//                 <Route path="/results" component={Results} />
-//             </Router>
-//         )
-//     }
-// }
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
+import App from './Components/Splash'
+
+class Routing extends React.Component {
+    render() {
+        return (
+            <Router>
+                <Route path="/" component={App} />
+                {/*<Route path="/clash" component={Clash} />*/}
+                {/*<Route path="/results" component={Results} />*/}
+            </Router>
+        )
+    }
+}
 
 ReactDOM.render(
     <React.StrictMode>
-        <Greeting />
-        <WelcomeText />
-        <PlayButton />
+        <Routing />
     </React.StrictMode>,
     document.getElementById('root')
 );
