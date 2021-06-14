@@ -10,7 +10,7 @@ class Routing extends React.Component {
     render() {
         return (
             <Router>
-                <Route path="/" component={App} />
+                <Route path="/home" component={App} />
                 <Route path="/clash" component={Clash} />
                 {/*<Route path="/results" component={Results} />*/}
             </Router>
