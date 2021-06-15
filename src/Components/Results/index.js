@@ -9,7 +9,7 @@ const Results = () => {
         const getTopTenToppings = async () => {
             let res = await fetch("http://localhost:5000/toppings/topten");
             res = await res.json();
-            await setTopTenToppings(res);
+            await setTopTenToppings(res.data);
         }
         getTopTenToppings()
     }, [])
@@ -19,6 +19,12 @@ const Results = () => {
         <div>
             <ResultsTitle />
             {console.log(topTenToppings)}
+            <ul>
+                {topTenToppings.map((value, index) => {
+                    return <li key={index}>{value.name}</li>
+                })}
+            </ul>
+
             {/*<ResultsTable />*/}
             <PlayButton />
         </div>
