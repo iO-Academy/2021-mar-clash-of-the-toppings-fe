@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import ResultsTitle from "./ResultsTitle/";
 import PlayButton from "../Splash/PlayButton";
+import ResultTableEntry from "./ResultTableEntry";
 
 const Results = () => {
     const [topTenToppings, setTopTenToppings] = useState([]);
@@ -21,7 +22,7 @@ const Results = () => {
             {console.log(topTenToppings)}
             <ul>
                 {topTenToppings.map((value, index) => {
-                    return <li key={index}>{value.name}</li>
+                    return <ResultTableEntry key={index} resultTableEntryIndex={index} resultTableEntryTopping={value} />
                 })}
             </ul>
 
