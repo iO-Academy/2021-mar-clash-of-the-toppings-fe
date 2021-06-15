@@ -10,6 +10,7 @@ const Clash = () => {
         const getData = async () => {
             let res = await fetch('http://localhost:5000/toppings');
             res = await res.json();
+            console.log(res.data);
             setToppings(res.data);
         }
         getData()
@@ -17,7 +18,6 @@ const Clash = () => {
 
     return (
         <div>
-
             <ClashTitle />
             <ClashBox />
         </div>
