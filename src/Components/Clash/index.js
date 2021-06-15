@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ClashTitle from "./ClashTitle";
+import ClashBox from "./ClashBox";
 
 
 // function ToppingsDeck() {
@@ -38,7 +39,7 @@ class Clash extends React.Component {
         return (
             <div>
                 <ClashTitle />
-                {/*<ClashBox />*/}
+                <ClashBox />
             </div>
 
         )

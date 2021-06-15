@@ -1,5 +1,5 @@
 import React from "react";
-import SpicyBeef from '././Images/spicyBeef.png'
+import SpicyBeef from '../../../../../Images/spicyBeef.png'
 
 class BeefImg extends React.Component {
     render() {
