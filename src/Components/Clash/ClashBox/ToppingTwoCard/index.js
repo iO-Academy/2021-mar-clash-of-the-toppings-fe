@@ -2,7 +2,7 @@ import React from "react";
 import ToppingTwoName from "./ToppingTwoName";
 import ToppingTwoCat from "./ToppingTwoCat";
 import BeefImg from "../ToppingOneCard/ToppingOneImg";
-import './ToppingTwoOuter.css'
+import './ToppingTwoCard.css'
 
 class ToppingTwoCard extends React.Component {
     render() {
