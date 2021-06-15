@@ -1,18 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
-import App from './Components/Splash'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import reportWebVitals from './reportWebVitals'
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom'
+import Splash from './Components/Splash'
 import Clash from './Components/Clash'
+import Results from "./Components/Results";
 
 class Routing extends React.Component {
     render() {
         return (
             <Router>
-                <Route path="/home" component={App} />
+                <Route path="/home" component={Splash} />
                 <Route path="/clash" component={Clash} />
-                {/*<Route path="/results" component={Results} />*/}
+                <Route path="/results" component={Results} />
             </Router>
         )
     }
