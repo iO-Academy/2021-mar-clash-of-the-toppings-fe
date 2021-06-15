@@ -6,7 +6,7 @@ import BeefImg from "./ToppingOneImg";
 class ToppingOneCard extends React.Component {
     render() {
         return (
-            <div>
+            <div id="ToppingOneOuterBox">
                 <ToppingOneName />
                 <BeefImg />
                 <ToppingOneCat />

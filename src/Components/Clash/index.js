@@ -2,48 +2,28 @@ import React, {useState, useEffect} from 'react'
 import ClashTitle from "./ClashTitle";
 import ClashBox from "./ClashBox";
 
+const Clash = ()> {
+    const [allToppings, setAllToppings] = useState([]);
+    const [toppingOne, setToppingOne] = useState({});
+    const [toppingTwo, setToppingTwo] = useState({});
 
-// function ToppingsDeck() {
-//     const getToppings() {
-//         fetch('')
-//             .then(res => res.json())
-//             .then(data =>)
-//     }
+    useEffect( () => {
+        fetch('http://localhost:5000/toppings').then(res=>res.json()).then(data =>console.log(data.data));
+    }, []);
 
-// }
+    // const getToppings = async(url) => {
+    //        const res = await fetch(url);
+    //        const data = await res.json();
+    //        console.log(data);
+    //        return data;
+    //     }
 
-// function Bitcoin() {
-//     const [btc, setBtc] = useState(0)
-//     function getBitcoin() {
-//         fetch('https://api.coindesk.com/v1/bpi/currentprice/gbp.json')
-//             .then(res => res.json())
-//             .then(data => {
-//                 setBtc(parseFloat(data.bpi.GBP.rate_float).toFixed(2))
-//             })
-//     }
-//     useEffect(() => {
-//         setInterval(
-//             getBitcoin,
-//             1000
-//         )
-//     }, [])
-//     return (
-//         <div>
-//             <h1>The Bitcoin price is currently {btc}</h1>
-//         </div>
-//     )
-// }
-
-class Clash extends React.Component {
-    render() {
-        return (
-            <div>
-                <ClashTitle />
-                <ClashBox />
-            </div>
-
-        )
-    }
+    return (
+        <div>
+            <ClashTitle />
+            <ClashBox />
+        </div>
+    )
 }
 
-export default Clash
+export default Clash;
