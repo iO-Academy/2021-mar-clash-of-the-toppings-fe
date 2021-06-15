@@ -4,6 +4,13 @@
     src: local('titleFont'), url(../../../fonts/upheavtt.ttf) format('truetype');
 }
 
+@keyframes animatedTitleColor {
+    0% {color: #E7257B;}
+    33% {color: lightblue;}
+    66% {color: lightgreen;}
+    100% {color: #E7257B}
+}
+
 /*Heading background color & text styling*/
 h1 {
     font-family: titleFont;
@@ -13,4 +20,7 @@ h1 {
     text-align: center;
     padding: 30px 0;
     margin: 0;
+    animation: infinite;
+    animation-duration: 3s;
+    animation-name: animatedTitleColor;
 }
