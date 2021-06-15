@@ -2,8 +2,7 @@ import React from "react";
 import ResultsTitle from "./ResultsTitle/";
 import PlayButton from "../Splash/PlayButton";
 
-class Results extends React.Component {
-    render() {
+const Results = () => {
         return (
             <div>
                 <ResultsTitle />
@@ -12,7 +11,6 @@ class Results extends React.Component {
             </div>
 
         )
-    }
 }
 
 export default Results

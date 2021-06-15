@@ -4,8 +4,7 @@ import ToppingOneCat from "./ToppingOneCat";
 import BeefImg from "./ToppingOneImg";
 import './ToppingOneCard.css'
 
-class ToppingOneCard extends React.Component {
-    render() {
+const ToppingOneCard =() => {
         return (
             <div id="ToppingOneOuterBox">
                 <ToppingOneName />
@@ -13,7 +12,6 @@ class ToppingOneCard extends React.Component {
                 <ToppingOneCat />
             </div>
         )
-    }
 }
 
 export default ToppingOneCard

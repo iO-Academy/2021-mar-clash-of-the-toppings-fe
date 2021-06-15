@@ -3,7 +3,7 @@ import Greeting from "./Greeting/index";
 import WelcomeText from "./WelcomeText/index";
 import PlayButton from "./PlayButton/index";
 
-class Splash extends React.Component {
+const Splash extends React.Component {
     render() {
         return (
             <div>

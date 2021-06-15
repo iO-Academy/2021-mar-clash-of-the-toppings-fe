@@ -1,14 +1,12 @@
 import React from "react";
 
 
-class ToppingOneName extends React.Component {
-    render() {
+const ToppingOneName = () => {
         return (
             <div>
                 <p>Name: </p>
             </div>
         )
-    }
 }
 
 export default ToppingOneName

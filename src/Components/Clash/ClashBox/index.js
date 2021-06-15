@@ -4,8 +4,7 @@ import ToppingOneCard from "./ToppingOneCard";
 import ToppingTwoCard from "./ToppingTwoCard";
 import './ClashBox.css'
 
-class ClashBox extends React.Component {
-    render() {
+const ClashBox = () => {
         return (
             <div id='ClashBoxStyle'>
                 <ToppingOneCard />
@@ -13,7 +12,6 @@ class ClashBox extends React.Component {
                 <ToppingTwoCard />
             </div>
         )
-    }
 }
 
 export default ClashBox
