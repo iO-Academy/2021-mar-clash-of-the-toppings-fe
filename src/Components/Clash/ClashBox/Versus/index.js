@@ -1,9 +1,10 @@
 import React from "react";
+import './Versus.css'
 import VersusIcon from '../../../../Images/vsIcon.png'
 
 const Versus = () =>
     <div>
-        <img alt="versus" src={VersusIcon}/>
+        <img id='versusIcon' alt="versus" src={VersusIcon} />
     </div>
 
 export default Versus
