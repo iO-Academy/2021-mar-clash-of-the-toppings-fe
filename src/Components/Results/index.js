@@ -19,13 +19,11 @@ const Results = () => {
     return (
         <div>
             <ResultsTitle />
-            {console.log(topTenToppings)}
-            <ul>
+            <div>
                 {topTenToppings.map((value, index) => {
                     return <ResultTableEntry key={index} resultTableEntryIndex={index} resultTableEntryTopping={value} />
                 })}
-            </ul>
-
+            </div>
             {/*<ResultsTable />*/}
             <PlayButton />
         </div>
