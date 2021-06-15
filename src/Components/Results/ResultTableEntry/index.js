@@ -1,9 +1,10 @@
 import React from "react";
 import SpicyBeef from '../../../Images/spicyBeef.png'
+import './ResultTableEntry.css'
 
 const ResultTableEntry = (props) => {
     return (
-        <div>
+        <div className={"idkwhatagoodnameis"}>
             <strong>{props.resultTableEntryIndex + 1}</strong>
             {console.log(props.resultTableEntryTopping)}
             <img src={SpicyBeef} />
