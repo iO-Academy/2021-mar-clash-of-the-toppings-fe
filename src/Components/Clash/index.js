@@ -8,7 +8,6 @@ class Clash extends React.Component {
         return (
             <div>
                 <ClashTitle />
-                {/*<BeefImg />*/}
                 {/*<ClashBox />*/}
             </div>
 
