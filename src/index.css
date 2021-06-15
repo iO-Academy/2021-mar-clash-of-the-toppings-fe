@@ -1,4 +1,5 @@
 body {
-  background-color: #E7257B;
+  background-image: url(./Images/background.png) ;
+  background-size: 100%;
   margin: 0;
 }
