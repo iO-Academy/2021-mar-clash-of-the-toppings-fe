@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ClashTitle from "./ClashTitle";
 import ClashBox from "./ClashBox";
 
-const Clash = () => {
+const Clash = (props) => {
   const [toppingOne, setToppingOne] = useState({});
   const [toppingTwo, setToppingTwo] = useState({});
   const [gameCounter, setGameCounter] = useState(0);
@@ -20,7 +20,7 @@ const Clash = () => {
   return (
     <div>
       <ClashTitle />
-      <ClashBox />
+      <ClashBox toppingOne={toppingOne} toppingTwo={toppingTwo} />
     </div>
   );
 };

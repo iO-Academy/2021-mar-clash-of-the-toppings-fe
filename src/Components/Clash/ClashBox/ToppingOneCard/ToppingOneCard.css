@@ -1,9 +1,37 @@
+@font-face {
+  font-family: bodyFont;
+  src: local("bodyFont"),
+    url(../../../../fonts/Russo_One.ttf) format("truetype");
+}
+
+p {
+  font-family: bodyFont;
+  font-size: 1.5em;
+  color: #e94e1b;
+}
+
 #ToppingOneOuterBox {
-    margin-left: 10%;
-    width: 30%;
-    height: 350px;
-    border-radius: 25px 0;
-    background-color: #FBC369;
-    box-shadow: 12px 8px #A81368;
-    padding: 10px;
+  margin-left: 10%;
+  width: 30%;
+  height: 350px;
+  border-radius: 25px 0;
+  background-color: #fbc369;
+  box-shadow: 12px 8px #a81368;
+  padding: 10px;
+}
+
+.cardImg {
+  height: 55%;
+}
+
+#centralCard {
+  display: flex;
+  height: 55%;
+  background-image: url("../../../../Images/circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
 }

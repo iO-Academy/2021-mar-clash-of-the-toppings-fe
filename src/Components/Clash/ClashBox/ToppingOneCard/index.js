@@ -1,17 +1,24 @@
 import React from "react";
-import ToppingOneName from "./ToppingOneName";
-import ToppingOneCat from "./ToppingOneCat";
-import BeefImg from "./ToppingOneImg";
-import './ToppingOneCard.css'
+import "./ToppingOneCard.css";
 
-const ToppingOneCard =() => {
-        return (
-            <div id="ToppingOneOuterBox">
-                <ToppingOneName />
-                <BeefImg />
-                <ToppingOneCat />
-            </div>
-        )
-}
+const ToppingOneCard = (props) => {
+  return (
+    <div id="ToppingOneOuterBox">
+      <div>
+        <p>Name: {props.toppingOne.name}</p>
+      </div>
+      <div id="centralCard">
+        <img
+          className="cardImg"
+          alt={props.toppingOne.name}
+          src={props.toppingOne.img}
+        />
+      </div>
+      <div>
+        <p>Category: {props.toppingOne.category}</p>
+      </div>
+    </div>
+  );
+};
 
-export default ToppingOneCard
+export default ToppingOneCard;
