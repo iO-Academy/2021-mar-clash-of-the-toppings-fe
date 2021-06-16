@@ -1,36 +1,42 @@
-
 @font-face {
-    font-family:titleFont;
-    src: local('titleFont'), url(../../../fonts/upheavtt.ttf) format('truetype');
+  font-family: titleFont;
+  src: local("titleFont"), url(../../../fonts/upheavtt.ttf) format("truetype");
 }
 
 @font-face {
-    font-family:bodyFont;
-    src: local('bodyFont'), url(../../../fonts/Russo_One.ttf) format('truetype');
+  font-family: bodyFont;
+  src: local("bodyFont"), url(../../../fonts/Russo_One.ttf) format("truetype");
 }
 
 .rowEntry {
-    display: flex;
-    background-color:  #FBC369;
-    width: 60%;
-    margin: 50px auto;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 25px;
-    box-shadow: 12px 8px #A81368;
-    font-size: 2em;
-    padding: 0 30px;
-    font-family: bodyFont;
-    color: #E94E1B;
+  display: flex;
+  background-color: #fbc369;
+  width: 60%;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 12px 8px #a81368;
+  font-size: 2em;
+  padding: 0 30px;
+  font-family: bodyFont;
+  color: #e94e1b;
 }
 
 .rowEntry img {
-    width: 40px;
-    margin: 2%;
-    font-size: 0.5em;
+  width: 40px;
+  margin: 2%;
+  font-size: 0.5em;
 }
 
 .winPercentile {
-    font-family: titleFont;
-    color: #E6332A;
+  font-family: titleFont;
+  color: #e6332a;
+}
+
+@media screen and (max-width: 600px) {
+  .rowEntry {
+    width: 80%;
+    font-size: 1.5em;
+  }
 }
