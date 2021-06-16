@@ -1,5 +1,4 @@
 import React from "react";
-import SpicyBeef from '../../../Images/spicyBeef.png'
 import './ResultTableEntry.css'
 
 const ResultTableEntry = (props) => {

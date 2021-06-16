@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import {Route, Link, BrowserRouter as Router} from 'react-router-dom'
+import {Route, BrowserRouter as Router} from 'react-router-dom'
 import Splash from './Components/Splash'
 import Clash from './Components/Clash'
 import Results from "./Components/Results";
