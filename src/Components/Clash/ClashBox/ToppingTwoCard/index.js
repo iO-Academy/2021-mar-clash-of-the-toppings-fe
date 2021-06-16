@@ -3,7 +3,7 @@ import "./ToppingTwoCard.css";
 
 const ToppingTwoCard = (props) => {
   return (
-    <div id="ToppingTwoOuterBox">
+    <div id="ToppingTwoOuterBox" onClick={props.handleToppingTwoClick}>
       <div>
           <p className='genericText'>Name:</p>
           <p className='dynamicText'>{props.toppingTwo.name}</p>
@@ -18,6 +18,7 @@ const ToppingTwoCard = (props) => {
       <div>
           <p className='genericText'>Category:</p>
           <p className='dynamicText'>{props.toppingTwo.category}</p>
+          <p className='percentageWin'>{props.toppingTwo.winPercent}%</p>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ const Clash = (props) => {
   const [toppingOne, setToppingOne] = useState({});
   const [toppingTwo, setToppingTwo] = useState({});
   const [gameCounter, setGameCounter] = useState(0);
+  const [cardClicked, setCardClicked] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -19,12 +20,27 @@ const Clash = (props) => {
   }, []);
 
   const handleToppingOneClick = () => {
-    toppingOne.wins++;
-    toppingOne.battles++;
-    toppingTwo.battles++;
+    if (cardClicked === false) {
+      toppingOne.wins++;
+      toppingOne.battles++;
+      toppingTwo.battles++;
 
-    updateTopping(toppingOne, setToppingOne);
-    updateTopping(toppingTwo, setToppingTwo);
+      updateTopping(toppingOne, setToppingOne);
+      updateTopping(toppingTwo, setToppingTwo);
+      setCardClicked(true);
+    }
+  };
+
+  const handleToppingTwoClick = () => {
+    if (cardClicked === false) {
+      toppingTwo.wins++;
+      toppingTwo.battles++;
+      toppingOne.battles++;
+
+      updateTopping(toppingOne, setToppingOne);
+      updateTopping(toppingTwo, setToppingTwo);
+      setCardClicked(true);
+    }
   };
 
   return (
@@ -33,6 +49,7 @@ const Clash = (props) => {
       <ClashBox
         handleToppingOneClick={handleToppingOneClick}
         toppingOne={toppingOne}
+        handleToppingTwoClick={handleToppingTwoClick}
         toppingTwo={toppingTwo}
       />
     </div>
