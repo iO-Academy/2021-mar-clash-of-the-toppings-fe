@@ -5,7 +5,8 @@ const ToppingOneCard = (props) => {
   return (
     <div id="ToppingOneOuterBox" onClick={props.handleToppingOneClick}>
       <div>
-        <p>Name: {props.toppingOne.name}</p>
+          <p className='genericText'>Name:</p>
+          <p className='dynamicText'>{props.toppingOne.name}</p>
       </div>
       <div id="centralCard">
         <img
@@ -15,7 +16,8 @@ const ToppingOneCard = (props) => {
         />
       </div>
       <div>
-        <p>Category: {props.toppingOne.category}</p>
+          <p className='genericText'>Category:</p>
+          <p className='dynamicText'>{props.toppingOne.category}</p>
       </div>
     </div>
   );

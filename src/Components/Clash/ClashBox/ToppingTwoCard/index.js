@@ -5,7 +5,8 @@ const ToppingTwoCard = (props) => {
   return (
     <div id="ToppingTwoOuterBox">
       <div>
-        <p>Name: {props.toppingTwo.name}</p>
+          <p className='genericText'>Name:</p>
+          <p className='dynamicText'>{props.toppingTwo.name}</p>
       </div>
       <div id="centralCard">
         <img
@@ -15,7 +16,8 @@ const ToppingTwoCard = (props) => {
         />
       </div>
       <div>
-        <p>Category: {props.toppingTwo.category}</p>
+          <p className='genericText'>Category:</p>
+          <p className='dynamicText'>{props.toppingTwo.category}</p>
       </div>
     </div>
   );

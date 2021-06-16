@@ -4,10 +4,18 @@
     url(../../../../fonts/Russo_One.ttf) format("truetype");
 }
 
-p {
+.genericText {
   font-family: bodyFont;
   font-size: 1.5em;
   color: #e94e1b;
+  margin: 5px 0;
+}
+
+.dynamicText {
+  font-family: bodyFont;
+  font-size: 1.3em;
+  color: #E6332A;
+  margin: 5px 0;
 }
 
 #ToppingOneOuterBox {
