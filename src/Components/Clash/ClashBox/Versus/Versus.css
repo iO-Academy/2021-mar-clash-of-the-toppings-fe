@@ -1,5 +1,6 @@
 #versusBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 20%;
     max-height: 370px;
