@@ -1,9 +1,35 @@
-img {
-    width: 400px;
+
+@font-face {
+    font-family:titleFont;
+    src: local('titleFont'), url(../../../fonts/upheavtt.ttf) format('truetype');
 }
 
-.idkwhatagoodnameis {
+@font-face {
+    font-family:bodyFont;
+    src: local('bodyFont'), url(../../../fonts/Russo_One.ttf) format('truetype');
+}
+
+.rowEntry {
+    display: flex;
     background-color:  #FBC369;
-    width: 700px;
+    width: 60%;
     margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 12px 8px #A81368;
+    font-size: 2em;
+    padding: 0 30px;
+    font-family: bodyFont;
+    color: #E94E1B;
+}
+
+img {
+    width: 40px;
+    margin: 2%;
+}
+
+.winPercentile {
+    font-family: titleFont;
+    color: #E6332A;
 }

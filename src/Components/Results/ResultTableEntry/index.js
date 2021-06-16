@@ -4,12 +4,11 @@ import './ResultTableEntry.css'
 
 const ResultTableEntry = (props) => {
     return (
-        <div className={"idkwhatagoodnameis"}>
+        <div className={"rowEntry"}>
             <strong>{props.resultTableEntryIndex + 1}</strong>
-            {console.log(props.resultTableEntryTopping)}
-            <img src={SpicyBeef} />
-            {props.resultTableEntryTopping.name}
-            {props.resultTableEntryTopping.winPercent}
+            <img src={SpicyBeef} alt='spicy'/>
+            <div className='toppingName'>{props.resultTableEntryTopping.name}</div>
+            <div className='winPercentile'>{props.resultTableEntryTopping.winPercent}</div>
         </div>
     )
 }
