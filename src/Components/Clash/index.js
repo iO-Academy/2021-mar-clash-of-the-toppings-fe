@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ClashTitle from "./ClashTitle";
 import ClashBox from "./ClashBox";
+import { isCompositeComponent } from "react-dom/cjs/react-dom-test-utils.production.min";
 
 const Clash = (props) => {
   const [toppingOne, setToppingOne] = useState({});
@@ -18,12 +19,41 @@ const Clash = (props) => {
   }, []);
 
   const handleToppingOneClick = () => {
-    setToppingOne((toppingOne.wins = toppingOne.wins + 1));
+    toppingOne.wins++;
+    toppingOne.battles++;
+    toppingTwo.battles++;
 
-    // add 1 to wins
-    // add 1 to battles
-    // add 1 to battles topping 2
-    console.log("clicked");
+    fetch("http://localhost:5000/toppings", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: toppingOne._id,
+        wins: toppingOne.wins,
+        battles: toppingOne.battles,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setToppingOne(data.data);
+      });
+
+    fetch("http://localhost:5000/toppings", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: toppingTwo._id,
+        wins: toppingTwo.wins,
+        battles: toppingTwo.battles,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setToppingTwo(data.data);
+      });
   };
 
   return (
