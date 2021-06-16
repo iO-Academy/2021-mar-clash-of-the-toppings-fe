@@ -27,7 +27,7 @@
 .rowEntry img {
     width: 40px;
     margin: 2%;
-
+    font-size: 0.5em;
 }
 
 .winPercentile {
