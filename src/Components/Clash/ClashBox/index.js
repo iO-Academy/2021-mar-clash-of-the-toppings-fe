@@ -12,7 +12,7 @@ const ClashBox = (props) => {
         toppingOne={props.toppingOne}
         cardClicked={props.cardClicked}
       />
-        <Versus />
+        <Versus cardClicked={props.cardClicked}/>
       <ToppingTwoCard
           handleToppingTwoClick={props.handleToppingTwoClick}
           toppingTwo={props.toppingTwo} />

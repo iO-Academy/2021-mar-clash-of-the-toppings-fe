@@ -51,6 +51,7 @@ const Clash = (props) => {
         toppingOne={toppingOne}
         handleToppingTwoClick={handleToppingTwoClick}
         toppingTwo={toppingTwo}
+        cardClicked={cardClicked}
       />
     </div>
   );
