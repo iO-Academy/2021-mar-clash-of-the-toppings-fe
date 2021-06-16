@@ -17,7 +17,7 @@ const Clash = (props) => {
       setToppingTwo(res.data[1]);
     };
     getData();
-  }, []);
+  }, [gameCounter]);
 
   const handleToppingOneClick = () => {
     if (cardClicked === false) {
@@ -43,6 +43,13 @@ const Clash = (props) => {
     }
   };
 
+  const nextRound = () => {
+    setGameCounter(gameCounter + 1);
+    setCardClicked(false);
+  }
+
+
+
   return (
     <div>
       <ClashTitle />
@@ -51,7 +58,9 @@ const Clash = (props) => {
         toppingOne={toppingOne}
         handleToppingTwoClick={handleToppingTwoClick}
         toppingTwo={toppingTwo}
+        gameCounter={gameCounter}
         cardClicked={cardClicked}
+        nextRound={nextRound}
       />
     </div>
   );

@@ -18,7 +18,14 @@ const ToppingOneCard = (props) => {
       <div>
           <p className='genericText'>Category:</p>
           <p className='dynamicText'>{props.toppingOne.category}</p>
-          <p className='percentageWin'>{props.toppingOne.winPercent}%</p>
+          {
+              props.cardClicked ?
+              <p className='percentageWin'>
+                  Wins: {props.toppingOne.winPercent}%
+              </p> :
+              ''
+          }
+
       </div>
     </div>
   );
