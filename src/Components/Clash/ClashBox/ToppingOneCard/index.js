@@ -3,7 +3,7 @@ import "./ToppingOneCard.css";
 
 const ToppingOneCard = (props) => {
   return (
-    <div id="ToppingOneOuterBox">
+    <div id="ToppingOneOuterBox" onClick={props.handleToppingOneClick}>
       <div>
         <p>Name: {props.toppingOne.name}</p>
       </div>

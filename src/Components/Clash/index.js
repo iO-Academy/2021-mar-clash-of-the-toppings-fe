@@ -17,10 +17,23 @@ const Clash = (props) => {
     getData();
   }, []);
 
+  const handleToppingOneClick = () => {
+    setToppingOne((toppingOne.wins = toppingOne.wins + 1));
+
+    // add 1 to wins
+    // add 1 to battles
+    // add 1 to battles topping 2
+    console.log("clicked");
+  };
+
   return (
     <div>
       <ClashTitle />
-      <ClashBox toppingOne={toppingOne} toppingTwo={toppingTwo} />
+      <ClashBox
+        handleToppingOneClick={handleToppingOneClick}
+        toppingOne={toppingOne}
+        toppingTwo={toppingTwo}
+      />
     </div>
   );
 };

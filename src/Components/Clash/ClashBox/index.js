@@ -7,7 +7,10 @@ import "./ClashBox.css";
 const ClashBox = (props) => {
   return (
     <div id="ClashBoxStyle">
-      <ToppingOneCard toppingOne={props.toppingOne} />
+      <ToppingOneCard
+        handleToppingOneClick={props.handleToppingOneClick}
+        toppingOne={props.toppingOne}
+      />
       <Versus />
       <ToppingTwoCard toppingTwo={props.toppingTwo} />
     </div>
