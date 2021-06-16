@@ -6,7 +6,7 @@ const ResultTableEntry = (props) => {
     return (
         <div className={"rowEntry"}>
             <strong>{props.resultTableEntryIndex + 1}</strong>
-            <img src={SpicyBeef} alt='spicy'/>
+            <img src={props.resultTableEntryTopping.img} alt='picture of a topping'/>
             <div className='toppingName'>{props.resultTableEntryTopping.name}</div>
             <div className='winPercentile'>{props.resultTableEntryTopping.winPercent}%</div>
         </div>

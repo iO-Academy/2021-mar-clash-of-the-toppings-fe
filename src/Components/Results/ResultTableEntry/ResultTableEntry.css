@@ -24,9 +24,10 @@
     color: #E94E1B;
 }
 
-img {
+.rowEntry img {
     width: 40px;
     margin: 2%;
+
 }
 
 .winPercentile {
