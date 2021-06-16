@@ -13,6 +13,7 @@ p {
 #ToppingTwoOuterBox {
   margin-right: 10%;
   width: 30%;
+  max-width: 290px;
   height: 350px;
   border-radius: 25px 0;
   background-color: #fbc369;
