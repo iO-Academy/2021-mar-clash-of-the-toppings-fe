@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ClashTitle from "./ClashTitle";
 import ClashBox from "./ClashBox";
-import { isCompositeComponent } from "react-dom/cjs/react-dom-test-utils.production.min";
+import updateTopping from "../../utils";
 
 const Clash = (props) => {
   const [toppingOne, setToppingOne] = useState({});
@@ -23,37 +23,8 @@ const Clash = (props) => {
     toppingOne.battles++;
     toppingTwo.battles++;
 
-    fetch("http://localhost:5000/toppings", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: toppingOne._id,
-        wins: toppingOne.wins,
-        battles: toppingOne.battles,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setToppingOne(data.data);
-      });
-
-    fetch("http://localhost:5000/toppings", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: toppingTwo._id,
-        wins: toppingTwo.wins,
-        battles: toppingTwo.battles,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setToppingTwo(data.data);
-      });
+    updateTopping(toppingOne, setToppingOne);
+    updateTopping(toppingTwo, setToppingTwo);
   };
 
   return (
