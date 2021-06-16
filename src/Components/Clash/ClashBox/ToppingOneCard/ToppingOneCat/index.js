@@ -1,13 +1,12 @@
 import React from "react";
+import './ToppingOneCat.css'
 
-class ToppingOneCat extends React.Component {
-    render() {
+const ToppingOneCat = () => {
         return (
             <div>
                 <p>Category: </p>
             </div>
         )
-    }
 }
 
 export default ToppingOneCat

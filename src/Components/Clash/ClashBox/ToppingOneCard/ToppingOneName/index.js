@@ -1,13 +1,12 @@
 import React from "react";
 
-class ToppingTwoName extends React.Component {
-    render() {
+
+const ToppingOneName = () => {
         return (
             <div>
                 <p>Name: </p>
             </div>
         )
-    }
 }
 
-export default ToppingTwoName
+export default ToppingOneName

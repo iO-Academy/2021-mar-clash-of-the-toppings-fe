@@ -1,0 +1,9 @@
+#ToppingTwoOuterBox {
+    margin-right: 10%;
+    width: 30%;
+    height: 350px;
+    border-radius: 25px 0;
+    background-color: #FBC369;
+    box-shadow: -12px 8px #A81368;
+    padding: 10px;
+}

@@ -1,13 +1,11 @@
 import React from "react";
 
-class ToppingTwoCat extends React.Component {
-    render() {
+const ToppingTwoCat = () => {
         return (
             <div>
                 <p>Category: </p>
             </div>
         )
-    }
 }
 
 export default ToppingTwoCat

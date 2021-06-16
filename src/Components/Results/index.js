@@ -4,6 +4,7 @@ import PlayButton from "../Splash/PlayButton";
 import ResultTableEntry from "./ResultTableEntry";
 
 const Results = () => {
+
     const [topTenToppings, setTopTenToppings] = useState([]);
 
     useEffect( () => {
@@ -28,7 +29,6 @@ const Results = () => {
             <PlayButton />
         </div>
     )
-
 }
 
 export default Results
