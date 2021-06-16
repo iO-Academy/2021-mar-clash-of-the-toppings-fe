@@ -3,8 +3,8 @@ import Greeting from "./Greeting/index";
 import WelcomeText from "./WelcomeText/index";
 import PlayButton from "./PlayButton/index";
 
-const Splash extends React.Component {
-    render() {
+const Splash = () => {
+
         return (
             <div>
                 <Greeting />
@@ -13,7 +13,7 @@ const Splash extends React.Component {
             </div>
 
         )
-    }
+
 }
 
 export default Splash
