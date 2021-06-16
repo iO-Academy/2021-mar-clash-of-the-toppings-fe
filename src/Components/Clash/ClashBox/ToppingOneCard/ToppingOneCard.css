@@ -13,6 +13,7 @@ p {
 #ToppingOneOuterBox {
   margin-left: 10%;
   width: 30%;
+  max-width: 290px;
   height: 350px;
   border-radius: 25px 0;
   background-color: #fbc369;
@@ -22,6 +23,7 @@ p {
 
 .cardImg {
   height: 55%;
+  padding-left: 10%;
 }
 
 #centralCard {

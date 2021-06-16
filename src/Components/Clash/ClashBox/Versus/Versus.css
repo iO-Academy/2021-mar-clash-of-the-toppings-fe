@@ -1,6 +1,9 @@
 #versusBox {
+    display: flex;
+    justify-content: center;
     width: 20%;
-    padding: 15% 0;
+    max-height: 370px;
+    align-items: center;
 }
 #versusIcon {
     width: 70%;

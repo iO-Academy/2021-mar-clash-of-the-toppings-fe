@@ -1,4 +1,5 @@
 #ClashBoxStyle {
     display: flex;
     margin: 4% 0;
+    justify-content: space-between;
 }
