@@ -11,7 +11,7 @@ class Routing extends React.Component {
     render() {
         return (
             <Router>
-                <Route path="/home" component={Splash} />
+                <Route exact path="/" component={Splash} />
                 <Route path="/clash" component={Clash} />
                 <Route path="/results" component={Results} />
             </Router>
