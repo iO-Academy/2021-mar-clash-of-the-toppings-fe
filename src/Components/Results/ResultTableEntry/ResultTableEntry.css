@@ -12,7 +12,7 @@
   display: flex;
   background-color: #fbc369;
   width: 60%;
-  margin: 50px auto;
+  margin: 25px auto;
   justify-content: space-between;
   align-items: center;
   border-radius: 25px;
@@ -38,5 +38,8 @@
   .rowEntry {
     width: 80%;
     font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }

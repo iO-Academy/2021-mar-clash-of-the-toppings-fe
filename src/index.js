@@ -13,7 +13,7 @@ class Routing extends React.Component {
         return (
             <Router>
                 <Switch>
-                    <Route path="/home" component={Splash} />
+                    <Route exact path="/" component={Splash} />
                     <Route path="/clash" component={Clash} />
                     <Route path="/results" component={Results} />
                     <Route component={NotFound} />
