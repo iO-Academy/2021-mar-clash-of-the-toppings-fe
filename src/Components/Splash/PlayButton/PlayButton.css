@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family:titleFont;
+    src: local('titleFont'), url(../../../fonts/upheavtt.ttf) format('truetype');
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    font-family: titleFont;
+    background-color: #A81368;
+    color: #E7257B;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #6B0C47;
+}
+
+button:active {
+    background-color: #E7257B;
+    color: #A81368;
+}

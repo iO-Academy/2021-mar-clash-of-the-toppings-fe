@@ -1,0 +1,14 @@
+#versusBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    max-height: 370px;
+    align-items: center;
+    z-index: 1;
+}
+#versusIcon {
+    width: 70%;
+    min-width: 100px;
+    margin: 3%;
+}
