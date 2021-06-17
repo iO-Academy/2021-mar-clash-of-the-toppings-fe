@@ -43,9 +43,6 @@
 #ToppingTwoOuterBox:active {
   background-color: #e3b262;
   box-shadow: none;
-}
-
-#ToppingTwoOuterBox:hover {
   border: 10px #cc4518 solid;
 }
 
