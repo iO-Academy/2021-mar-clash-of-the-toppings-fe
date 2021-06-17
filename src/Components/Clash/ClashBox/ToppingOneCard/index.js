@@ -3,7 +3,7 @@ import "./ToppingOneCard.css";
 
 const ToppingOneCard = (props) => {
   return (
-    <div id="ToppingOneOuterBox" onClick={props.handleToppingOneClick}>
+    <div id="ToppingOneOuterBox" onClick={props.handleToppingOneClick} onKeyDown={props.handleToppingOneClick} tabIndex={0}>
       <div>
           <p className='dynamicText'>{props.toppingOne.name}</p>
       </div>
