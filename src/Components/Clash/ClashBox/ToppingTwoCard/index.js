@@ -4,7 +4,7 @@ import "./ToppingTwoCard.css";
 const ToppingTwoCard = (props) => {
   return (
     <div id="ToppingTwoOuterBox" onClick={props.handleToppingTwoClick}>
-      <div>
+      <div className='gridCell'>
           <p className='dynamicText'>{props.toppingTwo.name}</p>
       </div>
       <div id="centralCard">
@@ -14,9 +14,10 @@ const ToppingTwoCard = (props) => {
           src={props.toppingTwo.img}
         />
       </div>
-      <div>
+        <div className='gridCell'>
           <p className='genericText'>Category:</p>
           <p className='dynamicText'>{props.toppingTwo.category}</p>
+        </div>
           {
               props.cardClicked ?
                   <p className='percentageWin'>
@@ -24,7 +25,6 @@ const ToppingTwoCard = (props) => {
                   </p> :
                   ''
           }
-      </div>
     </div>
   );
 };

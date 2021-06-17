@@ -1,14 +1,50 @@
 #versusBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     width: 20%;
-    max-height: 370px;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 420px;
     align-items: center;
+    justify-items: center;
     z-index: 1;
+    margin: 1.5rem;
 }
 #versusIcon {
-    width: 70%;
+    width: 60%;
     min-width: 100px;
-    margin: 3%;
+    margin: 0;
+}
+
+#nextRoundButton {
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#turnCounter {
+    font-family: titleFont;
+    font-size: 2.5rem;
+    background-color: #fbc369;
+    border-radius: 10px;
+    color: #e94e1b;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0 8px #a81368;
+}
+
+.nextRoundButton {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    #versusBox {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 50px;
+        align-items: center;
+        justify-items: center;
+        z-index: 1;
+        margin-top: 10%;
+    }
 }

@@ -3,3 +3,10 @@
     margin: 4% 0;
     justify-content: space-between;
 }
+@media screen and (max-width:600px){
+    #ClashBoxStyle {
+        display: grid;
+        grid-template-rows: 150px 200px 150px;
+        justify-items: center;
+    }
+}

@@ -1,7 +1,7 @@
-
 @font-face {
-  font-family:titleFont;
-  src: local('titleFont'), url(../../../../fonts/upheavtt.ttf) format('truetype');
+  font-family: titleFont;
+  src: local("titleFont"),
+    url(../../../../fonts/upheavtt.ttf) format("truetype");
 }
 
 @font-face {
@@ -20,8 +20,13 @@
 .dynamicText {
   font-family: bodyFont;
   font-size: 1.3em;
-  color: #E6332A;
+  color: #e6332a;
   margin: 5px 0;
+  height: 50px;
+}
+
+.gridCell {
+  height: 50px;
 }
 
 #ToppingTwoOuterBox {
@@ -32,7 +37,18 @@
   border-radius: 25px 0;
   background-color: #fbc369;
   box-shadow: -12px 8px #a81368;
-  padding: 10px;
+  padding: 20px;
+  border: 10px #fbc369 solid;
+}
+
+#ToppingTwoOuterBox:hover {
+  border: 10px #e94e1b solid;
+}
+
+#ToppingTwoOuterBox:active {
+  background-color: #e3b262;
+  box-shadow: none;
+  border: 10px #cc4518 solid;
 }
 
 .cardImg {
@@ -52,11 +68,21 @@
 }
 
 @keyframes percentWinColour {
-  0% {color: #E7257B;}
-  25% {color: #a81368;}
-  50% {color: #6B0C47;}
-  75% {color: #a81368;}
-  100% {color: #E7257B}
+  0% {
+    color: #e7257b;
+  }
+  25% {
+    color: #a81368;
+  }
+  50% {
+    color: #6b0c47;
+  }
+  75% {
+    color: #a81368;
+  }
+  100% {
+    color: #e7257b;
+  }
 }
 
 .percentageWin {
@@ -67,7 +93,28 @@
   animation-name: percentWinColour;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
   .percentageWin {
     font-size:1.4rem;
   }}
+
+@media screen and (max-width:600px){
+  #centralCard {
+    height: 150%;
+    margin: 0;
+  }
+  #ToppingTwoOuterBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px;
+
+    width: 90%;
+    max-width: none;
+    height: 120px;
+    box-shadow: 0 -8px #a81368;
+    margin: 0;
+    border: 10px #fbc369 solid;
+    justify-items: center;
+    padding: 0;
+  }
+}
