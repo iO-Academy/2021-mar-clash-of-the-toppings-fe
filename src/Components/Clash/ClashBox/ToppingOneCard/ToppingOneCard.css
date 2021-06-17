@@ -33,6 +33,19 @@
   background-color: #fbc369;
   box-shadow: 12px 8px #a81368;
   padding: 10px;
+  border: 10px #fbc369 solid;
+}
+
+#ToppingOneOuterBox:hover {
+  border: 10px #e94e1b solid;
+}
+
+#ToppingOneOuterBox:active {
+  background-color: #e3b262;
+  box-shadow: none;
+  #ToppingOneOuterBox:hover {
+  border: 10px #cc4518 solid;
+  }
 }
 
 .cardImg {
