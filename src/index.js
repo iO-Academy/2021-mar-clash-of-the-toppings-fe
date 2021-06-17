@@ -2,18 +2,22 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import {Route, BrowserRouter as Router} from 'react-router-dom'
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import Splash from './Components/Splash'
 import Clash from './Components/Clash'
 import Results from "./Components/Results";
+import NotFound from "./Components/NotFound";
 
 class Routing extends React.Component {
     render() {
         return (
             <Router>
-                <Route path="/home" component={Splash} />
-                <Route path="/clash" component={Clash} />
-                <Route path="/results" component={Results} />
+                <Switch>
+                    <Route path="/home" component={Splash} />
+                    <Route path="/clash" component={Clash} />
+                    <Route path="/results" component={Results} />
+                    <Route component={NotFound} />
+                </Switch>
             </Router>
         )
     }
