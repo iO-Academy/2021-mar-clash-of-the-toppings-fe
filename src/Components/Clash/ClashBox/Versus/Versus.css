@@ -6,6 +6,7 @@
     align-items: center;
     justify-items: center;
     z-index: 1;
+    margin: 1.5rem;
 }
 #versusIcon {
     width: 60%;
@@ -29,6 +30,10 @@
     padding: 5px;
     margin: 0;
     box-shadow: 0 8px #a81368;
+}
+
+.nextRoundButton {
+    font-size: 2rem;
 }
 
 @media screen and (max-width:600px) {

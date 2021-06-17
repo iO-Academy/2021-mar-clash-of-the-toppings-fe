@@ -9,7 +9,7 @@ const Versus = (props) => {
             <p id='turnCounter'>{props.gameCounter + 1}/10</p>
             <img id='versusIcon' alt="versus" src={VersusIcon}/>
             {props.cardClicked && props.gameCounter < 9 ?
-                <button onClick={props.nextRound}> Next round </button> :
+                <button className='nextRoundButton' onClick={props.nextRound}> Next round </button> :
             props.cardClicked && props.gameCounter >= 9 ?
                 <Link to="/results"><button> Results </button></Link> :
                 ''}
