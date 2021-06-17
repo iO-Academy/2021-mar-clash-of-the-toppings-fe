@@ -43,9 +43,7 @@
 #ToppingOneOuterBox:active {
   background-color: #e3b262;
   box-shadow: none;
-  #ToppingOneOuterBox:hover {
   border: 10px #cc4518 solid;
-  }
 }
 
 .cardImg {
@@ -85,3 +83,23 @@
   .percentageWin {
     font-size:1.4rem;
   }}
+
+@media screen and (max-width:600px){
+  #centralCard {
+    height: 150%;
+    margin: 0;
+  }
+  #ToppingOneOuterBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px;
+
+    width: 90%;
+    max-width: none;
+    height: 120px;
+    box-shadow: 0 8px #a81368;
+    margin: 0;
+    border: 10px #fbc369 solid;
+    justify-items: center;
+  }
+}

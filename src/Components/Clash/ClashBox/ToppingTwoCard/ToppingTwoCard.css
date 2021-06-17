@@ -22,6 +22,11 @@
   font-size: 1.3em;
   color: #E6332A;
   margin: 5px 0;
+  height: 50px;
+}
+
+.gridCell {
+  height: 50px;
 }
 
 #ToppingTwoOuterBox {
@@ -43,9 +48,7 @@
 #ToppingTwoOuterBox:active {
   background-color: #e3b262;
   box-shadow: none;
-#ToppingTwoOuterBox:hover {
   border: 10px #cc4518 solid;
-}
 }
 
 .cardImg {
@@ -84,3 +87,35 @@
   .percentageWin {
     font-size:1.4rem;
   }}
+
+/*#ToppingTwoOuterBox {*/
+/*  margin-right: 10%;*/
+/*  width: 30%;*/
+/*  max-width: 290px;*/
+/*  height: 400px;*/
+/*  border-radius: 25px 0;*/
+/*  background-color: #fbc369;*/
+/*  box-shadow: -12px 8px #a81368;*/
+/*  padding: 10px;*/
+/*  border: 10px #fbc369 solid;*/
+/*}*/
+
+@media screen and (max-width:600px){
+  #centralCard {
+    height: 150%;
+    margin: 0;
+  }
+  #ToppingTwoOuterBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px;
+
+    width: 90%;
+    max-width: none;
+    height: 120px;
+    box-shadow: 0 -8px #a81368;
+    margin: 0;
+    border: 10px #fbc369 solid;
+    justify-items: center;
+  }
+}

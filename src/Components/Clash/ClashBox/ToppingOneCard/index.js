@@ -14,9 +14,10 @@ const ToppingOneCard = (props) => {
           src={props.toppingOne.img}
         />
       </div>
-      <div>
+        <div className='gridCell'>
           <p className='genericText'>Category:</p>
           <p className='dynamicText'>{props.toppingOne.category}</p>
+        </div>
           {
               props.cardClicked ?
               <p className='percentageWin'>
@@ -24,8 +25,6 @@ const ToppingOneCard = (props) => {
               </p> :
               ''
           }
-
-      </div>
     </div>
   );
 };
