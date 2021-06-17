@@ -19,8 +19,8 @@ const Clash = (props) => {
     getData();
   }, [gameCounter]);
 
-  const handleToppingOneClick = () => {
-    if (cardClicked === false) {
+  const handleToppingOneClick = (e) => {
+    if (cardClicked === false && ( e.key === 'Enter' || e.button === 0)) {
       toppingOne.wins++;
       toppingOne.battles++;
       toppingTwo.battles++;
@@ -31,8 +31,8 @@ const Clash = (props) => {
     }
   };
 
-  const handleToppingTwoClick = () => {
-    if (cardClicked === false) {
+  const handleToppingTwoClick = (e) => {
+    if (cardClicked === false && ( e.key === 'Enter' || e.button === 0)) {
       toppingTwo.wins++;
       toppingTwo.battles++;
       toppingOne.battles++;

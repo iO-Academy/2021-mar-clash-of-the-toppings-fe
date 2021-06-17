@@ -3,7 +3,7 @@ import "./ToppingTwoCard.css";
 
 const ToppingTwoCard = (props) => {
   return (
-    <div id="ToppingTwoOuterBox" onClick={props.handleToppingTwoClick}>
+    <div id="ToppingTwoOuterBox" onClick={props.handleToppingTwoClick} onKeyDown={props.handleToppingTwoClick} tabIndex={0}>
       <div className='gridCell'>
           <p className='dynamicText'>{props.toppingTwo.name}</p>
       </div>
