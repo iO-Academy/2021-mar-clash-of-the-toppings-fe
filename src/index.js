@@ -12,12 +12,18 @@ class Routing extends React.Component {
     render() {
         return (
             <Router>
+<<<<<<< HEAD
                 <Switch>
                     <Route path="/home" component={Splash} />
                     <Route path="/clash" component={Clash} />
                     <Route path="/results" component={Results} />
                     <Route component={NotFound} />
                 </Switch>
+=======
+                <Route exact path="/" component={Splash} />
+                <Route path="/clash" component={Clash} />
+                <Route path="/results" component={Results} />
+>>>>>>> main
             </Router>
         )
     }
