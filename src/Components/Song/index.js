@@ -7,6 +7,10 @@ class Song extends Component {
     isPlaying: false,
   };
 
+  componentWillUnmount() {
+    this.state.audio.pause();
+  }
+
   playPause = () => {
     let isPlaying = this.state.isPlaying;
     if (isPlaying) {
