@@ -1,7 +1,7 @@
-
 @font-face {
-  font-family:titleFont;
-  src: local('titleFont'), url(../../../../fonts/upheavtt.ttf) format('truetype');
+  font-family: titleFont;
+  src: local("titleFont"),
+    url(../../../../fonts/upheavtt.ttf) format("truetype");
 }
 
 @font-face {
@@ -20,7 +20,7 @@
 .dynamicText {
   font-family: bodyFont;
   font-size: 1.3em;
-  color: #E6332A;
+  color: #e6332a;
   margin: 5px 0;
 }
 
@@ -43,9 +43,10 @@
 #ToppingTwoOuterBox:active {
   background-color: #e3b262;
   box-shadow: none;
+}
+
 #ToppingTwoOuterBox:hover {
   border: 10px #cc4518 solid;
-}
 }
 
 .cardImg {
@@ -65,11 +66,21 @@
 }
 
 @keyframes percentWinColour {
-  0% {color: #E7257B;}
-  25% {color: #a81368;}
-  50% {color: #6B0C47;}
-  75% {color: #a81368;}
-  100% {color: #E7257B}
+  0% {
+    color: #e7257b;
+  }
+  25% {
+    color: #a81368;
+  }
+  50% {
+    color: #6b0c47;
+  }
+  75% {
+    color: #a81368;
+  }
+  100% {
+    color: #e7257b;
+  }
 }
 
 .percentageWin {
@@ -80,7 +91,8 @@
   animation-name: percentWinColour;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
   .percentageWin {
-    font-size:1.4rem;
-  }}
+    font-size: 1.4rem;
+  }
+}
