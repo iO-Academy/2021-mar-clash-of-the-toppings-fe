@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ClashTitle from "./ClashTitle";
 import ClashBox from "./ClashBox";
 import updateTopping from "../../utils";
+import Song from "../Song";
 
 const Clash = (props) => {
   const [toppingOne, setToppingOne] = useState({});
@@ -46,9 +47,7 @@ const Clash = (props) => {
   const nextRound = () => {
     setGameCounter(gameCounter + 1);
     setCardClicked(false);
-  }
-
-
+  };
 
   return (
     <div>
@@ -62,6 +61,7 @@ const Clash = (props) => {
         cardClicked={cardClicked}
         nextRound={nextRound}
       />
+      <Song />
     </div>
   );
 };
