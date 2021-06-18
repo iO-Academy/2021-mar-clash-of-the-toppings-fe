@@ -1,5 +1,11 @@
 import React from "react";
+import Song from "../../Song";
 
-const ClashTitle = () => <h1>PICK YOUR TOPPING!</h1>
+const ClashTitle = () => (
+  <div>
+    <Song />
+    <h1>PICK YOUR TOPPING!</h1>
+  </div>
+);
 
-export default ClashTitle
+export default ClashTitle;

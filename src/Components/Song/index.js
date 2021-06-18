@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import song from "../../Audio/happynes.mp3";
+import soundIcon from "../../Audio/musicicon.png";
+import "./song.css";
 
 class Song extends Component {
   state = {
     audio: new Audio(song),
-    isPlaying: false,
+    isPlaying: true,
   };
+
+  componentDidMount() {
+    this.playPause();
+  }
+
+  componentWillUnmount() {
+    this.state.audio.pause();
+  }
 
   playPause = () => {
     let isPlaying = this.state.isPlaying;
@@ -22,7 +32,7 @@ class Song extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.playPause}>Play | Pause</button>
+        <img id="song" src={soundIcon} onClick={this.playPause} />
       </div>
     );
   }
