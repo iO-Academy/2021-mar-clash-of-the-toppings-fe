@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Versus.css";
 import VersusIcon from "../../../../Images/vsIcon.png";
 import { Link } from "react-router-dom";
